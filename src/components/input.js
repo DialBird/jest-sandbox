@@ -1,13 +1,13 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 
-import { guessWord } from './actions';
+import { guessWord } from '../actions';
 
 class Input extends Component {
   constructor(props) {
     super(props);
 
-    this.state = { currentGuess: null }
+    this.state = { currentGuess: '' }
   }
 
   submitGuessedWord = e => {
