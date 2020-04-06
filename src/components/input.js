@@ -3,7 +3,7 @@ import { connect } from 'react-redux';
 
 import { guessWord } from '../actions';
 
-class Input extends Component {
+export class UnconnectedInput extends Component {
   constructor(props) {
     super(props);
 
@@ -54,4 +54,4 @@ const mapStateToProps = ({ success }) => {
   return { success };
 }
 
-export default connect(mapStateToProps, { guessWord })(Input);
+export default connect(mapStateToProps, { guessWord })(UnconnectedInput);

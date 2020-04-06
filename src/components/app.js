@@ -6,7 +6,7 @@ import Congrats from './congrats';
 import Input from './input';
 import { getSecretWord } from '../actions';
 
-class UnconnectedApp extends React.Component {
+export class UnconnectedApp extends React.Component {
   componentDidMount() {
     this.props.getSecretWord();
   }
